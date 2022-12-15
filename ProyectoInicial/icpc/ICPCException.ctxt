@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=ICPCException
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ ICPCExeption\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=msm
+comment1.target=ICPCException(java.lang.String)
+comment1.text=\r\n\ Lanza\ las\ exepciones\ creadas.\r\n\ @param\ Recibe\ un\ mensaje\ String\ msm\r\n
+numComments=2

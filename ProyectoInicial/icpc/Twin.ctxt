@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Twin
+comment0.text=\r\nLet\ me\ create\ and\ modify\ the\ Twin's\ sign.\r\n\ \r\n\ @author\ Daniel\ Rojas\r\n\ @author\ Sebastian\ Zamora\r\n\ @version\ 1.0\r\n
+comment1.params=coordXa\ coordYa\ coordXb\ coordYb\ SpeedLimit
+comment1.target=Twin(int,\ int,\ int,\ int,\ int)
+comment1.text=\r\n\ Let\ me\ create\ the\ Twin's\ sign.\r\n\ @Param\ one\ of\ the\ intersections\ on\ the\ route\ of\ the\ sign\:\ intersectionA.\r\n\ @Param\ The\ other\ intersection\ of\ the\ route\:\ intersectionB.\r\n\ @Param\ The\ limit\ that\ show\ the\ sign\:\ SpeedLimit\r\n
+comment2.params=
+comment2.target=void\ makeVisibleSign()
+comment2.text=\r\n\ Draw\ a\ sign\ on\ each\ intersection.\r\n
+numComments=3

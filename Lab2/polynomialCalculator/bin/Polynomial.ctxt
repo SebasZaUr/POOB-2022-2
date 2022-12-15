@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Polynomial
+comment0.text=\r\n\ Polinomial.\ \r\n\ This\ class\ implements\ a\ polinomical\ data\ type,\ this\ is\ a\ fraction's\ group\ in\ this\ format\ ax^n\ +\ bx^n-1.....fx^1+h.\ \r\n\ @author\ Daniel\ Felipe\ Rojas\ Hern\u00E1ndez\r\n\ @author\ Sebasti\u00E1n\ Zamora\ Urrego\r\n\ @version\ 09/09/2022\r\n
+comment1.params=termNumber
+comment1.target=Polynomial(int)
+comment1.text=\r\n\ Create\ a\ new\ polinomial,\ given\ the\ term\u00B4s\ number\r\n\ @param\ termNumber\r\n
+comment2.params=
+comment2.target=java.util.List\ Search()
+numComments=3

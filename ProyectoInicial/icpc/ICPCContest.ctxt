@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=ICPCContest
+comment0.text=\r\n\ This\ class\ can\ simulate\ the\ all\ problem\r\n\ \r\n\ @author\ Daniel\ Rojas\r\n\ @author\ Sebastian\ Zamora\r\n\ @version\ 1.0\r\n
+comment1.params=cost\ routesSpeedLimit
+comment1.target=int\ solve(int,\ int[][])
+comment2.params=cost\ routesSpeedLimit
+comment2.target=int\ solucion(int,\ int[][])
+comment3.params=cost\ routesSpeedLimit
+comment3.target=int\ simulate(int,\ int[][])
+comment3.text=\r\n\ let\ me\ know\ th\ cost\r\n
+comment4.params=
+comment4.target=boolean\ ok()
+numComments=5

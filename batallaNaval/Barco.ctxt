@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Barco
+comment0.text=\r\n\ Me\ permite\ crear\ y\ manipular\ cada\ barco.\r\n\r\n\ @author\ Sebastian\ Zamora\ Urrego\r\n\ @author\ Daniel\ Felipe\ Rojas\r\n\ @version\ 1.0\r\n
+comment1.params=
+comment1.target=Barco()
+comment2.params=longitud\ latitud
+comment2.target=boolean\ seranDestruidas(int,\ int)
+comment2.text=\r\n\ Me\ permite\ saber\ si\ un\ barco\ puede\ ser\ destruido\r\n\ \r\n\ @param\ La\ posicion\ longitud\r\n\ @param\ La\ posicion\ latitud\r\n\ @return\ Si\ sera\ destruido\ o\ no\r\n
+comment3.params=
+comment3.target=boolean\ maquinasDebiles()
+comment3.text=\r\n\ Me\ permite\ saber\ si\ un\ barco\ tiene\ los\ suficientes\ marinos.\r\n\ \r\n\ @return\ Si\ tiene\ o\ no\ los\ marinos\ suficientes\ para\ funcionar.\r\n
+comment4.params=
+comment4.target=java.util.ArrayList\ marino()
+numComments=5

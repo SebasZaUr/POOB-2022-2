@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Rebel
+comment0.text=\r\nLet\ me\ create\ and\ modify\ the\ rebel's\ routes.\r\n\ \r\n\ @author\ Daniel\ Felipe\ Rojas\ Hernandez\r\n\ @author\ Sebastian\ Zamora\ Urrego\ \r\n\ @version\ 1.0\r\n
+comment1.params=interA\ interB\ IntersecA\ IntersecB
+comment1.target=Rebel(java.lang.String,\ java.lang.String,\ Intersection,\ Intersection)
+comment2.params=intA\ intB\ speedLimit\ type
+comment2.target=void\ putSign(java.lang.String,\ java.lang.String,\ int,\ java.lang.String)
+comment3.params=
+comment3.target=void\ removeSign()
+numComments=4

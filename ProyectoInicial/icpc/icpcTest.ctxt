@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=icpcTest
+comment0.text=\r\n\ The\ test\ class\ icpcTest.\r\n\ @author\ Daniel\ Rojas\r\n\ @author\ Sebastian\ Zamora\r\n\ @version\r\n\ @version\ 1.0\r\n
+comment1.params=
+comment1.target=void\ shouldCreateIntersections()
+comment2.params=
+comment2.target=void\ shouldCreateRoutes()
+comment3.params=
+comment3.target=void\ shouldCreateSigns()
+comment4.params=
+comment4.target=void\ shouldDeleteIntersectionsRoutesAndSings()
+numComments=5

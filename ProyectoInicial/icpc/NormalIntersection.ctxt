@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=NormalIntersection
+comment0.text=\r\n\ Let\ me\ create\ and\ modify\ Normal's\ Intersection.\r\n\ \r\n\ @author\ Daniel\ Rojas\r\n\ @author\ Sebastian\ Zamora\r\n\ @version\ 1.0\r\n
+comment1.params=color\ x\ y
+comment1.target=NormalIntersection(java.lang.String,\ int,\ int)
+comment1.text=\r\n\ Let\ me\ create\ a\ normal's\ intersection.\r\n\ \r\n\ @param\ the\ color\ of\ the\ intersection\:\ color.\r\n\ @param\ the\ Xposition\ of\ the\ intersection\:\ x.\r\n\ @param\ the\ Yposition\ of\ the\ intersection\:\ y.\r\n
+comment2.params=partner\ type
+comment2.target=void\ addRoute(Intersection,\ java.lang.String)
+comment2.text=\r\n\ Let\ me\ create\ a\ route.\r\n\ @param\ the\ other\ intersection\ what\ conect\ whit\ the\ route\:\ partner\r\n\ @param\ the\ type\ of\ the\ route\:\ type.\r\n\ @throws\ if\ the\ route\ exist\:\ ICPCException\r\n
+comment3.params=
+comment3.target=void\ removeRoutes()
+comment3.text=\r\n\ Let\ me\ remove\ all\ the\ routes\ that\ has\ the\ intersection.\r\n\ \r\n
+comment4.params=intAB
+comment4.target=void\ removeRoute(java.lang.String)
+comment4.text=\r\n\ Let\ me\ remove\ a\ route\ of\ the\ intersection.\r\n\ @param\ the\ key\ o\ name\ of\ the\ route;\ intAB.\r\n\ @throws\ if\ the\ route\ doesn't\ exist\:\ ICPCException\r\n
+numComments=5

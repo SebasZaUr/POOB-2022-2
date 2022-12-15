@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Ubicacion
+comment0.text=\r\n\ Me\ permite\ crear\ y\ manipular\ todas\ las\ maquinas.\r\n\r\n\ @author\ Sebastian\ Zamora\ Urrego\r\n\ @author\ Daniel\ Felipe\ Rojas\ Hernadez\r\n\ @version\ 1.0\r\n
+comment1.params=
+comment1.target=void\ alNorte()
+comment1.text=\r\n\ Me\ permite\ sumarle\ uno\ a\ mi\ latitud\r\n
+comment2.params=dLon\ dLat
+comment2.target=void\ avance(int,\ int)
+comment2.text=\r\n\ Me\ permite\ sumarle\ o\ restarle\ a\ mi\ longitud\ y\ latitud\ dos\ posiciones\ dadas\r\n\ por\ el\ usuario\r\n\ \r\n\ @param\ la\ distancia\ que\ voy\ avanzar\ o\ retroceder\ en\ longitud\ dLon\r\n\ @param\ la\ distancia\ que\ voy\ avanzar\ o\ retroceder\ en\ latitud\ dLat\r\n
+comment3.params=longitud\ latitud
+comment3.target=boolean\ seranDestruidas(int,\ int)
+comment3.text=\r\n\ Me\ verifica\ si\ en\ la\ posicion\ dada\ hay\ alguna\ maquina\ aliada\r\n\ \r\n\ @param\ La\ posicion\ que\ quiero\ comprovar\ longitud\r\n\ @param\ La\ posicion\ que\ quiero\ comprovar\ Latitud\r\n\ @return\ Si\ fue\ destruida\ la\ maquina\ o\ no\r\n
+numComments=4

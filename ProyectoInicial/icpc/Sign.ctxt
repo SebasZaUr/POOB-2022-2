@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Sign
+comment0.text=\r\n\ Let\ me\ create\ and\ modify\ signs.\r\n\ \r\n\ @author\ Daniel\ Rojas\r\n\ @author\ Sebastian\ Zamora\r\n\ @version\ 2.5\r\n
+comment1.params=
+comment1.target=int\ getLimit()
+comment1.text=\r\n\ get\ the\ limit\ that\ has\ the\ sign\r\n\ @return\ the\ value\ of\ limit\:\ SpeedLimit.\r\n
+comment2.params=tipo
+comment2.target=void\ isUseful(java.lang.String)
+comment2.text=\r\n\ Let\ me\ define\ if\ the\ signal\ is\ wrong\ or\ unnesesary\r\n\ @param\ the\ usefulness\ of\ the\ sign\:\ tipo\r\n
+comment3.params=
+comment3.target=java.lang.String\ getType()
+comment3.text=\r\n\ get\ the\ usefulness\ of\ the\ sign.\r\n\ @return\ the\ usefulness\ of\ the\ sign\:\ usefull.\r\n
+comment4.params=
+comment4.target=void\ makeVisibleSign()
+comment4.text=\r\n\ Draw\ the\ sign\ in\ Canvas\r\n
+comment5.params=
+comment5.target=void\ makeInvisibleSign()
+comment5.text=\r\n\ Let\ me\ errase\ all\ signs\ on\ canvas.\r\n
+comment6.params=cordx\ cordy
+comment6.target=void\ pintar(int,\ int)
+comment6.text=\r\n\ Let\ me\ identify\ the\ way\ of\ draw\ the\ sign\r\n\ \r\n
+numComments=7

@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Maquina
+comment0.text=\r\n\ Me\ permite\ crear\ y\ manipular\ todas\ las\ maquinas.\r\n\r\n\ @author\ Sebastian\ Zamora\ Urrego\r\n\ @author\ Daniel\ Felipe\ Rojas\ Hernadez\r\n\ @version\ 1.0\r\n
+comment1.params=
+comment1.target=java.lang.String\ getTipo()
+comment2.params=
+comment2.target=Ubicacion\ getUbicacion()
+comment2.text=\r\n\ Obtiene\ la\ ubicacion\ de\ la\ maquina.\r\n\ \r\n\ @return\ Devuelve\ la\ ubicacion\ de\ la\ maquina\ ubicacion\r\n
+comment3.params=
+comment3.target=void\ alNorte()
+comment3.text=\r\n\ Mueve\ una\ posicion\ al\ norte\ la\ maquina\r\n
+comment4.params=dLon\ dLat
+comment4.target=void\ avance(int,\ int)
+comment4.text=\r\n\ Hace\ avanzar\ n\ posiciones\ a\ la\ maquina\r\n\ \r\n\ @param\ dLon\r\n\ @param\ dLat\r\n
+comment5.params=longitud\ latitud
+comment5.target=boolean\ seranDestruidas(int,\ int)
+comment5.text=\r\n\ Determina\ si\ en\ esa\ ubicacion\ hay\ una\ maquina\r\n\ \r\n\ @param\ longitud\r\n\ @param\ latitud\r\n\ @return\ Si\ hay\ una\ maquina\ o\ no\r\n
+comment6.params=
+comment6.target=boolean\ maquinasDebiles()
+comment6.text=\r\n\ Determina\ si\ en\ esa\ ubicacion\ hay\ una\ maquina\ debil\r\n\ \r\n\ @param\ longitud\r\n\ @param\ latitud\r\n\ @return\ Si\ hay\ una\ maquina\ o\ no\r\n
+comment7.params=
+comment7.target=java.util.ArrayList\ aviones()
+comment8.params=
+comment8.target=java.util.ArrayList\ marino()
+numComments=9

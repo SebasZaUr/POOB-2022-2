@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Needy
+comment0.text=\r\n\ Let\ me\ create\ and\ modify\ Needy's\ Intersection.\r\n\ \r\n\ @author\ Daniel\ Rojas\r\n\ @author\ Sebastian\ Zamora\r\n\ @version\ 1.0\r\n
+comment1.params=tipo\ color\ x\ y
+comment1.target=Needy(java.lang.String,\ java.lang.String,\ int,\ int)
+comment1.text=\r\n\ Let\ me\ create\ a\ normal's\ intersection.\r\n\ \r\n\ @param\ the\ color\ of\ the\ intersection\:\ color.\r\n\ @param\ the\ Xposition\ of\ the\ intersection\:\ x.\r\n\ @param\ the\ Yposition\ of\ the\ intersection\:\ y.\r\n
+comment2.params=partner\ type
+comment2.target=void\ addRoute(Intersection,\ java.lang.String)
+comment2.text=\r\n\ Let\ me\ create\ a\ route.\r\n\ @param\ the\ other\ intersection\ what\ conect\ whit\ the\ route\:\ partner\r\n\ @param\ the\ type\ of\ the\ route\:\ type.\r\n\ @throws\ if\ the\ route\ exist\:\ ICPCException\r\n
+comment3.params=intAB
+comment3.target=void\ removeRoute(java.lang.String)
+comment3.text=\r\n\ Let\ me\ remove\ a\ route\ of\ the\ intersection.\ If\ the\ intersection\ doesn't\ have\ a\ route\ inmediaty\r\n\ errase\ the\ intersection\r\n\ @param\ the\ key\ o\ name\ of\ the\ route;\ intAB.\r\n\ @throws\ if\ the\ route\ doesn't\ exist\:\ ICPCException\r\n
+comment4.params=
+comment4.target=void\ removeRoutes()
+comment4.text=\r\n\ Let\ me\ remove\ all\ routes\ of\ the\ intersection.\ If\ the\ intersection\ doesn't\ have\ a\ route\ inmediaty\r\n\ erase\ the\ intersection\r\n
+comment5.params=
+comment5.target=void\ erase()
+comment5.text=\r\n\ Let\ me\ errase\ an\ intersection\ on\ Canvas\r\n
+comment6.params=
+comment6.target=boolean\ routesEmpty()
+comment6.text=\r\n\ Let\ me\ know\ if\ the\ intersection\ has\ routes\r\n
+numComments=7

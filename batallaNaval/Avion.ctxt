@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Avion
+comment0.text=\r\n\ Me\ permite\ crear\ y\ manipular\ aviones.\r\n\r\n\ @author\ Sebastian\ Zamora\ Urrego\r\n\ @author\ Daniel\ Felipe\ Rojas\r\n\ @version\ 1.0\r\n
+comment1.params=
+comment1.target=Avion()
+comment2.params=
+comment2.target=boolean\ inAir()
+comment2.text=\r\n\ Me\ permite\ saber\ si\ el\ avion\ esta\ en\ aire\r\n\ \r\n\ @return\ Si\ esta\ en\ el\ aire\ el\ avion\ o\ no\r\n
+comment3.params=longitud\ latitud
+comment3.target=boolean\ seranDestruidas(int,\ int)
+comment3.text=\r\n\ Me\ permite\ saber\ si\ un\ avion\ puede\ ser\ destruido\r\n\ \r\n\ @param\ La\ posicion\ longitud\r\n\ @param\ La\ posicion\ latitud\r\n\ @return\ Si\ sera\ destruido\ o\ no\r\n
+comment4.params=
+comment4.target=boolean\ maquinasDebiles()
+comment4.text=\r\n\ Me\ permite\ saber\ si\ un\ avion\ tiene\ piloto\r\n\ \r\n\ @return\ Si\ tiene\ piloto\ o\ no\r\n
+comment5.params=
+comment5.target=java.lang.String\ getPlaca()
+comment6.params=
+comment6.target=java.util.ArrayList\ marino()
+numComments=7
