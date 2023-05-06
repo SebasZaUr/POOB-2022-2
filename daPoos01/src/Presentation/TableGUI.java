@@ -24,54 +24,59 @@ import Domain.Damas;
 
 /**
  * Clase de la presentacion del tablero de damas
+ * 
  * @author Sebastian Zamora Urrego.
- * @author Daniel Rojas Hernandezz.
- *@version 3.0
+ * @author Johann Amaya Gomez
+ * @version 1.0
  */
-public class TableGUI extends JFrame{
-	private static final int sizeTable = 10;
-	Dimension dimensions = Toolkit.getDefaultToolkit().getScreenSize();
-	private JPanel[][] colors = new JPanel[sizeTable][sizeTable];
-	private JButton[][] botones = new JButton[sizeTable][sizeTable];
-	private JMenuItem guardar,salvar,salir,iniciarJugador,iniciarMaquina;
-	private JFileChooser selecArchivo;
-	private static String jugador1,jugador2,Cjugador1,Cjugador2,maquina,modoJuego;
-	private int porcentaje;
-	private static int intentosJugador1;
-	private static int intentosJugador2;
+public class TableGUI extends JFrame {
+    private static final int sizeTable = 10;
+    Dimension dimensions = Toolkit.getDefaultToolkit().getScreenSize();
+    private JPanel[][] colors = new JPanel[sizeTable][sizeTable];
+    private JButton[][] botones = new JButton[sizeTable][sizeTable];
+    private JMenuItem guardar, salvar, salir, iniciarJugador, iniciarMaquina;
+    private JFileChooser selecArchivo;
+    private static String jugador1, jugador2, Cjugador1, Cjugador2, maquina, modoJuego;
+    private int porcentaje;
+    private static int intentosJugador1;
+    private static int intentosJugador2;
 
     /**
-	 * Me crea la representacion grafica del tablero.
-	 * @param Jugador1	Nombre del Jugador 1
-	 * @param Jugador2 Nombre del Jugador 2
-	 * @param porcentaje El porcentaje de las casillas especiales dado por el usuario.
-	 * @param maquina Si se usa la maquina me da la dificultad de ella.
-	 * @param modoJuego El modo de juego.
-	 */
-	public TableGUI(String Jugador1,String Jugador2, int porcentaje,String maquina, String modoJuego){
-		setTitle("DaPOO");
-		setSize(dimensions.width , dimensions.height);
-	    jugador1 = Jugador1;
-	    jugador2 = Jugador2;
-	    this.Cjugador1 = "Azul";
-	    this.Cjugador2 = "Rojo";
-	    this.maquina = maquina;
-	    this.modoJuego = modoJuego;
-	    this.porcentaje = porcentaje;
-	    JPanel pantallas = preparePantalla();
-	    this.getContentPane().add(pantallas);
-	    prepareElementsMenu();
-	    prepareBottons();
-	    prepareActions();
+     * Me crea la representacion grafica del tablero.
+     * 
+     * @param Jugador1   Nombre del Jugador 1
+     * @param Jugador2   Nombre del Jugador 2
+     * @param porcentaje El porcentaje de las casillas especiales dado por el
+     *                   usuario.
+     * @param maquina    Si se usa la maquina me da la dificultad de ella.
+     * @param modoJuego  El modo de juego.
+     */
+    public TableGUI(String Jugador1, String Jugador2, int porcentaje, String maquina, String modoJuego) {
+        setTitle("DaPOO");
+        setSize(dimensions.width, dimensions.height);
+        jugador1 = Jugador1;
+        jugador2 = Jugador2;
+        this.Cjugador1 = "Azul";
+        this.Cjugador2 = "Rojo";
+        this.maquina = maquina;
+        this.modoJuego = modoJuego;
+        this.porcentaje = porcentaje;
+        JPanel pantallas = preparePantalla();
+        this.getContentPane().add(pantallas);
+        prepareElementsMenu();
+        prepareBottons();
+        prepareActions();
         prepareActionMenu();
-	}
+    }
 
     /**
-	 * Me prepara el panel de la pantalla con el tablero y la informacion del usuario.
-	 * @return
-	 */
+     * Me prepara el panel de la pantalla con el tablero y la informacion del
+     * usuario.
+     * 
+     * @return
+     */
     public JPanel preparePantalla() {
-   	    JPanel ego = new JPanel();
+        JPanel ego = new JPanel();
         JPanel informacion = new JPanel();
         ego.setLayout(new GridLayout(1, 2));
         JPanel palatalTable = prepareTable();
@@ -97,61 +102,59 @@ public class TableGUI extends JFrame{
 
         ego.add(palatalTable);
         ego.add(informacion);
-        
 
-        
         return ego;
     }
 
     /**
-	 * Me genera el tablero con sus casillas.
-	 * @return Juego El panel que tiene el tablero.
-	 */
-    private JPanel prepareTable(){
-        Damas.getInstance().setPlayers(jugador1, jugador2,maquina);
-    	String[][] table = Damas.getInstance().reconvertCasillas(porcentaje);
+     * Me genera el tablero con sus casillas.
+     * 
+     * @return Juego El panel que tiene el tablero.
+     */
+    private JPanel prepareTable() {
+        Damas.getInstance().setPlayers(jugador1, jugador2, maquina);
+        String[][] table = Damas.getInstance().reconvertCasillas(porcentaje);
         JPanel juego = new JPanel();
-        juego.setLayout(new GridLayout(sizeTable,sizeTable));
+        juego.setLayout(new GridLayout(sizeTable, sizeTable));
         for (int i = 0; i < sizeTable; i++) {
-            for (int j = 0; j < sizeTable; j++){
+            for (int j = 0; j < sizeTable; j++) {
                 JButton boton = new JButton();
                 boton.setOpaque(false);
                 boton.setContentAreaFilled(false);
                 boton.setBorderPainted(false);
-                if(table[i][j] != null) {
-                    try{
-                        colors[i][j] = (CasillaGUI) Class.forName("Presentation."+table[i][j]+"GUI").getConstructor().newInstance();
+                if (table[i][j] != null) {
+                    try {
+                        colors[i][j] = (CasillaGUI) Class.forName("Presentation." + table[i][j] + "GUI")
+                                .getConstructor().newInstance();
                         colors[i][j].add(boton);
                         botones[i][j] = boton;
-                    }catch(Exception e){
+                    } catch (Exception e) {
                         e.printStackTrace();
                     }
-                }else{
+                } else {
                     colors[i][j] = new VAciaGUI();
                     colors[i][j].setBackground(Color.WHITE);
                 }
-            juego.add(colors[i][j]);
+                juego.add(colors[i][j]);
             }
         }
         return juego;
     }
 
     /**
-	 * Me genera los botones de las casillas del tablero.
-	 */
-    private void prepareBottons(){
-    	int[][] juego = Damas.getInstance().getJuego();
-        for(int i = 0; i < colors.length; i++){
-            for(int j = 0; j < colors.length; j++){
-                if(juego[i][j] == 1){
+     * Me genera los botones de las casillas del tablero.
+     */
+    private void prepareBottons() {
+        int[][] juego = Damas.getInstance().getJuego();
+        for (int i = 0; i < colors.length; i++) {
+            for (int j = 0; j < colors.length; j++) {
+                if (juego[i][j] == 1) {
                     botones[i][j].setText("1");
-                }
-                else if(juego[i][j] == 2){
-                	botones[i][j].setText("2");
-                	botones[i][j].setBackground(Color.blue);
-                }
-                else if(juego[i][j] == 3){
-                	botones[i][j].setText("0");
+                } else if (juego[i][j] == 2) {
+                    botones[i][j].setText("2");
+                    botones[i][j].setBackground(Color.blue);
+                } else if (juego[i][j] == 3) {
+                    botones[i][j].setText("0");
                     botones[i][j].setBackground(Color.WHITE);
                 }
             }
@@ -159,18 +162,17 @@ public class TableGUI extends JFrame{
     }
 
     /**
-	 * Me activa las acciones de los botones de cada casilla del tablero.
-	 */
-    private void prepareActions(){
+     * Me activa las acciones de los botones de cada casilla del tablero.
+     */
+    private void prepareActions() {
         setDefaultCloseOperation(HIDE_ON_CLOSE);
         gameButtonsOptions();
     }
 
-
-    private void gameButtonsOptions(){
-        for(int i=0; i<sizeTable; i++){
-            for(int j=0; j<sizeTable; j++){
-                if(botones[i][j] != null){
+    private void gameButtonsOptions() {
+        for (int i = 0; i < sizeTable; i++) {
+            for (int j = 0; j < sizeTable; j++) {
+                if (botones[i][j] != null) {
                     botones[i][j].addActionListener(ActionsButtonsTable.getInstance());
                 }
             }
@@ -179,9 +181,9 @@ public class TableGUI extends JFrame{
     }
 
     /**
-	 * Me gerena todos los elementos del menu.
-	 */
-    public void prepareElementsMenu(){
+     * Me gerena todos los elementos del menu.
+     */
+    public void prepareElementsMenu() {
         JMenuBar menuBar = new JMenuBar();
         setJMenuBar(menuBar);
         JMenu menu = new JMenu("Menu");
@@ -206,9 +208,9 @@ public class TableGUI extends JFrame{
     }
 
     /**
-	 * Me activa todas las acciones del menu.
-	 */
-    public void prepareActionMenu(){
+     * Me activa todas las acciones del menu.
+     */
+    public void prepareActionMenu() {
         guardar.addActionListener(e -> guardarPartida());
         salvar.addActionListener(e -> cargarPartida());
         salir.addActionListener(e -> exit());
@@ -259,37 +261,39 @@ public class TableGUI extends JFrame{
     }
 
     /**
-	 * Me permite cerrar la partida actual y iniciaruna nueva partida contra un jugador.
-	 */
+     * Me permite cerrar la partida actual y iniciaruna nueva partida contra un
+     * jugador.
+     */
     public void VsJugador() {
-    	if (JOptionPane.showConfirmDialog(rootPane, "Esta seguro que desea iniciar otra partida contra otro jugador",
+        if (JOptionPane.showConfirmDialog(rootPane, "Esta seguro que desea iniciar otra partida contra otro jugador",
                 "Salir del sistema", JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION) {
-    		JugadorVsJugadorGUI config = new JugadorVsJugadorGUI();
+            JugadorVsJugadorGUI config = new JugadorVsJugadorGUI();
             config.setVisible(true);
             this.dispose();
         }
     }
 
     /**
-     * Me permite cerrar la partida actual y iniciamos una nueva partida contra la maquina.
-	 */
+     * Me permite cerrar la partida actual y iniciamos una nueva partida contra la
+     * maquina.
+     */
     public void VsMaquina() {
-    	if (JOptionPane.showConfirmDialog(rootPane, "Esta seguro que desea iniciar otra partida contra otro jugador",
+        if (JOptionPane.showConfirmDialog(rootPane, "Esta seguro que desea iniciar otra partida contra otro jugador",
                 "Salir del sistema", JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION) {
-    		JugadorVSMaquinaGUI config = new JugadorVSMaquinaGUI();
+            JugadorVSMaquinaGUI config = new JugadorVSMaquinaGUI();
             config.setVisible(true);
             this.dispose();
         }
     }
-    
+
     /**
      * Aumenta el contador de turnos de cada jugador
      */
     public static void aumentar(int jugador) {
-    	if(jugador == 1) {
-    		intentosJugador1++;
-    	}else{
-    		intentosJugador2++;
-    	}
+        if (jugador == 1) {
+            intentosJugador1++;
+        } else {
+            intentosJugador2++;
+        }
     }
 }
